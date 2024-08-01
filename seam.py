@@ -67,7 +67,7 @@ def add_seam(image, seam):
     return new_image
 
 # Load the image
-src = np.array(Image.open("image.jpg"))
+src = np.array(Image.open("image1.jpg"))
 # Carve the image
 for _ in range(300):
     energy_map = calculate_energy_map(src)
