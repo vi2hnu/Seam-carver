@@ -1,7 +1,6 @@
 import numpy as np
 from PIL import Image
 import cv2
-import os
 
 def calculate_energy_map(image):
     gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -68,15 +67,18 @@ def add_seam(image, seam):
     return new_image
 
 # Load the image
-src = np.array(Image.open("C:/Users/Vishnu/Downloads/seam_carving/image.jpg"))
+src = np.array(Image.open("image.jpg"))
 # Carve the image
-for _ in range(200):
+for _ in range(300):
     energy_map = calculate_energy_map(src)
     cumulative_energy = compute_cumulative_energy(energy_map)
     seam = find_min_seam(cumulative_energy)
     src = remove_seam(src, seam)
 
 # Convert the carved image to PIL Image and display it
+# Convert the carved image to PIL Image
 carved_image_pil = Image.fromarray(src)
-carved_image_pil.show()
+
+# Save the carved image to a file
+carved_image_pil.save("carved_image.jpg")
 
