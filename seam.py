@@ -68,7 +68,7 @@ def add_seam(image, seam):
     return new_image
 
 # Load the image
-image_path = "Images/image4.jpg"
+image_path = "Images/image1.jpg"
 src = np.array(Image.open(image_path))
 
 # Carve the image
