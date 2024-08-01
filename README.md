@@ -10,7 +10,6 @@ Seam carving is an image resizing technique that allows for content-aware resizi
 #### original images:
 ![alt text](image1.jpg)
 
-
 #### carved images:
 ![alt text](carved_image.jpg)
 ## Tech Stack
