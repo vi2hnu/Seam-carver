@@ -2,7 +2,7 @@
 
 ## Overview
 
-Seam carving is an image resizing technique that allows for content-aware resizing of images by removing or adding seams. A seam is a connected path of pixels that extends from the left to right of an image. This project implements seam carving to resize images while preserving important content and avoiding distortions.
+Seam carving is an image resizing technique that allows for content-aware resizing of images by removing or adding seams. A seam is a connected path of pixels that extends from the left to right of an image. This project implements seam carving to resize images while preserving important content and avoiding distortions. This program uses computational power, no AI's were used.
 
 
 ## Examples:
